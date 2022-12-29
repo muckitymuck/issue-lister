@@ -1,0 +1,65 @@
+{
+  "name": "github-issues-viewer",
+  "version": "0.1.0",
+  "author": {
+    "name": "paulnta",
+    "email": "paul.ntawuruhunga@gmail.com"
+  },
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.4.0",
+    "@material-ui/icons": "^3.0.1",
+    "@trainline/react-skeletor": "^1.0.2",
+    "apollo-boost": "^0.1.20",
+    "apollo-link-logger": "^1.2.3",
+    "classnames": "^2.2.6",
+    "dayjs": "^1.7.7",
+    "deepmerge": "^2.2.1",
+    "graphql": "^14.0.2",
+    "prismjs": "^1.15.0",
+    "prop-types": "^15.6.2",
+    "query-string": "^6.2.0",
+    "react": "^16.6.1",
+    "react-apollo": "^2.2.4",
+    "react-dom": "^16.6.1",
+    "react-ga": "^2.5.5",
+    "react-highlight": "^0.12.0",
+    "react-markdown": "^4.0.3",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "recompose": "^0.30.0",
+    "yarn": "^1.22.19"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src",
+    "deploy": "yarn build && firebase deploy",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "storybook-deployer": {
+    "gitUsername": "paulnta",
+    "gitEmail": "paul.ntawuruhunga@gmail.com",
+    "commitMessage": "Deploy Storybook to GitHub Pages"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@storybook/addon-actions": "^4.0.4",
+    "@storybook/addon-links": "^4.0.4",
+    "@storybook/addons": "^4.0.4",
+    "@storybook/react": "^4.0.4",
+    "@storybook/storybook-deployer": "^2.3.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-import": "^1.11.0"
+  }
+}
